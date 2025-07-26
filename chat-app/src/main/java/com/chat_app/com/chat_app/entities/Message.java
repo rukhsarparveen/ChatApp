@@ -15,6 +15,12 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class Message {
     private String content;
+    private String sender;
     private LocalDateTime timeStamp;
 
+    public Message(String content, String sender) {
+        this.content = content;
+        this.sender = sender;
+        this.timeStamp= LocalDateTime.now();
+    }
 }
